@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Studio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #home {
+        background-image: url("bgimg3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+      }
+      h1 {
+        font-size: 67px;
+        padding-left: 176px;
+        margin-bottom: 32px;
+        text-shadow: 2px 4px azure;
+      }
+      .quote {
+        padding-top: 215px;
+      }
+      .parts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .part1,
+      .part2,
+      .part3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .part1 img,
+      .part3 img {
+        height: 300px;
+        width: 430px;
+        padding: 3px;
+      }
+      .part2 img {
+        height: 400px;
+        width: 440px;
+        padding: 3px;
+      }
+      .part2 img:hover,
+      .part1 img:hover,
+      .part3 img:hover {
+        opacity: 0.8;
+      }
+
+      #work {
+        background-color: bisque;
+      }
+      .quote button {
+        border-color: aliceblue;
+        background-color: #ecbb94;
+        padding: 4px 23px;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: 176px;
+      }
+      .card{
+        margin:10px 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="home">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">PhotoStudio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#work">Work</a>
+              <a class="nav-link" href="#services">Our Services</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="quote">
+        <h1>We Capture</h1>
+        <h1>Your Memories!</h1>
+        <button>EXPLORE NOW!</button>
+      </div>
+    </div>
+
+    <div id="work">
+      <h1 style="text-shadow: 2px 4px rgb(169 197 197)">Our Work</h1>
+      <div class="parts">
+        <div class="part1">
+          <img src="i1.jpg" alt="" />
+          <img src="i2.jpg" alt="" />
+          <img src="i3.jpg" alt="" />
+          <img src="i4.jpg" alt="" />
+        </div>
+        <div class="part2">
+          <img src="i9.jpg" alt="" />
+          <img src="i10.jpg" alt="" />
+          <img src="i11.jpg" alt="" />
+        </div>
+        <div class="part3">
+          <img src="i5.jpg" alt="" />
+          <img src="i6.jpg" alt="" />
+          <img src="i7.jpg" alt="" />
+          <img src="i8.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <h1 style="text-shadow: 2px 4px rgb(169 197 197)">Our Services</h1>
+      <div class="parts">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Wedding pack</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn" style="background-color: #e7a2ea"
+              >See More</a
+            >
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Engagement pack</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn" style="background-color: #e7a2ea"
+              >See More</a
+            >
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Editorial pack</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn" style="background-color: #e7a2ea"
+              >See More</a
+            >
+          </div>
+        </div>
+</div>
+<div class="parts">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Custom pack</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn" style="background-color: #e7a2ea"
+              >See More</a
+            >
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Personal pack</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn" style="background-color: #e7a2ea"
+              >See More</a
+            >
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Vintage pack</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn" style="background-color: #e7a2ea"
+              >See More</a
+            >
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
